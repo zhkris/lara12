@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class CurrentTime extends Model
 {
-    //
+    protected $guarded = [];
 }

@@ -19,7 +19,9 @@ class DatabaseSeeder extends Seeder
         $currentTime = CurrentTime::first();
 
         if (!$currentTime) {
-            $currentTime = CurrentTIme::create();
+            $currentTime = CurrentTIme::create([
+                'name' => 'created'
+            ]);
         }
 
         User::factory()->create([
